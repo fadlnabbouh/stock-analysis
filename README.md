@@ -3,13 +3,13 @@
 # Overview of Project
 The purpose of this project is to help Steve, a good friend, write a VBA script to analyze stock data from 2017 and 2018 of stocks of companies that invest in green energy. After writing the code, it was then refactored in order to improve its speed and efficiency. 
 
-#Results
+# Results
 
-##Analysis
-For the full analysis and VBA script, visit: [Module 2- Stock Analysis](link)
+## Analysis
+For the full analysis and VBA script, visit: [Module 2- Stock Analysis](https://github.com/fadlnabbouh/stock-analysis/blob/main/VBA_challenge.xlsm)
 Aftering running the script for 2017 and 2018, I determined that there was large growth in green stocks in 2017, while 2018 saw a general drop in the returns. This was made evident by the number of green cells in the return column in 2017, indicating positive returns, vs the red cells in 2018 indicate loss. 2 stocks grew in both years, "RUN" and "ENPH", with "ENPH" seeing the most growth.
 
-##Refactored Code
+## Refactored Code
 In addition to successfully analyzing the stock data, I also managed to successfully refactor the code, significantly reducing its run time. The initial code between the two scripts were identical: setting up the input box, worksheets, table header, and arrays. Then, I created 3 For loops instead of nesting the loops in order to make the code more efficient. I initialized the tickerVolume to 0 here: 
 	'1a) Create a ticker Index
     tickerIndex = 0
@@ -102,13 +102,13 @@ For loops to write out results in a table:
 
 With this refactored code, I was able to reduce the rurn time of the script from 0.695 seconds to around 0.12 seconds (see screenshots below). 
 
-![Refactored Code Time 2017](link)
-![Refactored Code Time 2018](link)
+![Refactored Code Time 2017](https://github.com/fadlnabbouh/stock-analysis/blob/main/Resources/refactored_code_2017.png)
+![Refactored Code Time 2018](https://github.com/fadlnabbouh/stock-analysis/blob/main/Resources/refactored_code_2018.png)
 
-#Summary
+# Summary
 
-##Advantages and Disadvantages
+## Advantages and Disadvantages
 The biggest advantage to regactoring code is increasing its efficiency and reducing its run time. Although we only analyzed 12 stocks in this project, the original VBA script would take too long to run if we were to analyze thousands of stocks. Refactoring allows me to reduce the time it takes to run. In addition, another advantage would be having cleaner code. Clean code allows it to be reader much more efficiently by others and to allow me to easily work with the code when needed (to improve it or to fix it). A disadvantage, however, to refactoring code is that it is time consuming. Refactoring is only worth doing if the advantage of a cleaner, more efficient code out weighs the disadvantage of the time consumption.  
 
-##Applying to Stock-Analysis
+## Applying to Stock-Analysis
 In this stock analysis, refactoring the code did make it much cleaner and easier to read. In addition, it significantly reduce the scripts run time and improved its effiency. The disadvantage applies here as well in that it took time to refactor the entire code to make more effient.
